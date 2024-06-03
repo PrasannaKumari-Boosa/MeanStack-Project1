@@ -1,0 +1,11 @@
+ <div class="container">
+ <mat-card>
+ <mat-form-field>
+   <mat-label>Leave a comment</mat-label>
+    <textarea matInput  [(ngModel)]="textInput" placeholder="its a new example"></textarea>
+    <button mat-raised-button color="accent"  (click)="onAddPost()">Save Post</button>
+ </mat-form-field>
+</mat-card>         
+
+<p>{{ newPost}}</p>
+</div>
