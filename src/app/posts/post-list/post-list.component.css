@@ -1,0 +1,8 @@
+:host {
+    margin-top: 1rem;
+    display: block;
+}
+.mat-body {
+    text-align: center;
+    font-size: 20px;
+}
