@@ -3,12 +3,12 @@
    <form action="" (submit)="onAddPost(postform)" #postform ="ngForm">
    <mat-form-field>
       <mat-label>Title</mat-label>
-      <input matInput type="text" ngModel name="title" #title="ngModel" placeholder="title here" required>
+      <input matInput type="text" [(ngModel)] = "post.title" name="title" #title="ngModel" placeholder="title here" required>
       <mat-error *ngIf="title.invalid">Please enter a post title </mat-error>
    </mat-form-field>
  <mat-form-field>
    <mat-label>Leave a comment</mat-label>
-    <textarea matInput name="content" rows="4" ngModel placeholder="its a new example" required #content="ngModel"></textarea>
+    <textarea matInput name="content" rows="4" [(ngModel)]="post.content" placeholder="its a new example" required #content="ngModel"></textarea>
     <mat-error *ngIf="content.invalid">Please enter a post content here. </mat-error> 
    </mat-form-field>
    <div class="button">
